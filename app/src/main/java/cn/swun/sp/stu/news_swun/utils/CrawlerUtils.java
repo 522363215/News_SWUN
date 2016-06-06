@@ -128,6 +128,7 @@ public class CrawlerUtils {
                 return null;
             }
         } catch (IOException e) {
+              Log.i(TAG, "解析出错!");
             e.printStackTrace();
             return null;
         }

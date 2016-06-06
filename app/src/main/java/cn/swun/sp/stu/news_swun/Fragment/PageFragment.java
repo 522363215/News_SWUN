@@ -167,7 +167,15 @@ public class PageFragment extends BaseFragment<FragmentView, FragmentPrrsenter> 
      */
     @Override
     public void WrongToNetwork() {
-        Toast.makeText(getContext(), "网络异常，请检查网络！", Toast.LENGTH_SHORT).show();
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                ValideRefresh(true);
+                mSwipeRefreshLayout.setRefreshing(false);
+                Toast.makeText(getContext(), "网络异常，请检查网络！", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private class ToUpRefresh extends RecyclerView.OnScrollListener {
