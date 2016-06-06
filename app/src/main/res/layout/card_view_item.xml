@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp">
+    <!--card_view:cardBackgroundColor="#636363"-->
+
+    <RelativeLayout
+        android:id="@+id/show_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:lines="3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_content"
+            android:singleLine="true"
+            android:textColor="#0A0A0A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/detail_content"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:lines="3"
+            android:text="fsafsafasfasdfffsafsafasfasdffafsafsafasfasdffafsafsafasfasdffafsafsafasfasdffafsafsafasfasdffaa"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

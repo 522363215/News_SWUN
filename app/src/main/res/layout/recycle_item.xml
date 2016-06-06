@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="fasfsafasfasdfsafdsadasdasdasdasdsadasdasdasdasdasdasdasasfsafsaf"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="1955-05-55"
+        android:textSize="18sp" />
+</RelativeLayout>
