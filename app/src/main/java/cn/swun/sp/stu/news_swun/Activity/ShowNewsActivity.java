@@ -114,7 +114,7 @@ public class ShowNewsActivity extends BaseActivity<ShowNewsActivityView, ShowDet
             }
         });
         collapsingAppBar.setTitle(title_text);
-        Picasso.with(this).load(infos.get(1)).resize(800, 800).centerCrop().placeholder(R.mipmap.swun_logo).error(R.mipmap.swun_logo).into(appBarImage);
+        Picasso.with(this).load(infos.get(1)).resize(800, 800).centerCrop().placeholder(R.mipmap.xinwen1).error(R.mipmap.xinwen1).into(appBarImage);
 
     }
 
